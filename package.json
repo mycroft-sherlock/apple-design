@@ -1,0 +1,20 @@
+{
+  "name": "dsh-apple-design",
+  "version": "0.1.0",
+  "description": "Apple HIG design-review skill and reference reader for DeepSeek Harness, powered by the installed apple-design skill.",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": ["lib/index.js", "cordis.patch.yml", "README.md", "LICENSE"],
+  "license": "MIT",
+  "engines": {"node": ">=18"},
+  "dsh": {"bundle": {"patch": "./cordis.patch.yml"}},
+  "keywords": ["dsh", "dsh-plugin", "deepseek-harness", "apple", "hig", "design-review", "skill"],
+  "repository": {"type": "git", "url": "git+https://github.com/mycroft-sherlock/apple-design.git"},
+  "homepage": "https://github.com/mycroft-sherlock/apple-design#readme",
+  "bugs": {"url": "https://github.com/mycroft-sherlock/apple-design/issues"}
+}
